@@ -51,27 +51,37 @@
             </ul>
         </div>
     </nav>
-    <div class='container' align="center" id="vizbox">
-            <h1 align="center">Visualizations</h1>
-            <h6 align="center">Click a plot for further analysis</h6>
-            <hr>
+
+    <div class='container'>
             <div class='row'>
-                <h2 class='col-md-6' id="imgbox">vs. Max Temperature<br>
-                    <a href="temp.html"><img src= "../Visualizations/Lat_v_Temp.png"></a>
-                </h2>
-                <h2 class='col-md-6' id="imgbox">vs. Cloudiness<br>
-                    <a href="cloudiness.html"><img src= "../Visualizations/Lat_v_Cloudiness.png"></a>
-                </h2>
+                <div class='col-md-7'>
+                    <div class='box' id="leftbox">
+                        <h1 align="center">Latitude vs. Humidity</h1>
+                        <hr>
+                        <img src= "Visualizations/Lat_v_Humidity.png" align="center">
+                        <p>
+                            This plot demonstrates that there is a noticeable correlation between humidity and latitude,
+                            but rather that being linear or logarithmic, it is clustered within certain ranges of latitude.
+                            Generally speaking, between latitudes of -40 and 0 degrees, as well as between 40 and 70 degrees,
+                            the humidity sits between 50% and 100%. Between latitudes of 0 and 40 degrees, the humidity ranges from 5% to 85%.
+                        </p>
+                    </div>
+                </div>
+                <div class='col-md-5'>
+                    <div class='box' align="center" id="rightbox">
+                        <h1 align="center">Visualizations</h1>
+                        <hr>
+                        <div>
+                            <a href="temp.html"><img src= "Visualizations/Lat_v_Temp.png" id='vizimage'></a>
+                            <a href="cloudiness.html"><img src= "Visualizations/Lat_v_Cloudiness.png" id='vizimage'></a>
+                            <a href="humidity.html"><img src= "Visualizations/Lat_v_Humidity.png" id='plotviz'></a>
+                            <a href="windspeed.html"><img src= "Visualizations/Lat_v_WindSpeed.png" id='vizimage'></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class='row'>
-                <h2 class='col-md-6' id="imgbox">vs. Humidity<br>
-                    <a href="humidity.html"><img src= "../Visualizations/Lat_v_Humidity.png"></a>
-                </h2>
-                <h2 class='col-md-6' id="imgbox">vs. Wind Speed<br>
-                    <a href="windspeed.html"><img src= "../Visualizations/Lat_v_WindSpeed.png"></a>
-                </h2>
-            </div>
-    </div>
+        </div>
+
     <!-- The following scripts integrate with bootstrap and enable the dropdown menu in the navbar -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

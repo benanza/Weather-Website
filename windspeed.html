@@ -52,14 +52,35 @@
         </div>
     </nav>
 
-    <div class='container' id='dataPage'>
-        <h1>Data</h1>
-        <hr>
-        <h6>This table shows all of the data used for our analysis and plotting.</h6><br>
-        <!-- Insert table from cities.html file -->
-        <object id='myTable' data="../Resources/cities.html"></object>
-    </div>
-    
+    <div class='container'>
+            <div class='row'>
+                <div class='col-md-7'>
+                    <div class='box' id="leftbox">
+                        <h1 align="center">Latitude vs. Wind Speed</h1>
+                        <hr>
+                        <img src= "Visualizations/Lat_v_WindSpeed.png" align="center">
+                        <p>
+                            While this plot does show a range of wind speeds that consistently taper off around 15 mph, it is clear that wind speed
+                            does not appear to have any correlation with latitude. When a linear regression was run on this data, it came back with
+                            an r-square value much too low to merit any significance.
+                        </p>
+                    </div>
+                </div>
+                <div class='col-md-5'>
+                    <div class='box' align="center" id="rightbox">
+                        <h1 align="center">Visualizations</h1>
+                        <hr>
+                        <div>
+                            <a href="temp.html"><img src= "Visualizations/Lat_v_Temp.png" id='vizimage'></a>
+                            <a href="cloudiness.html"><img src= "Visualizations/Lat_v_Cloudiness.png" id='vizimage'></a>
+                            <a href="humidity.html"><img src= "Visualizations/Lat_v_Humidity.png" id='vizimage'></a>
+                            <a href="windspeed.html"><img src= "Visualizations/Lat_v_WindSpeed.png" id='plotviz'></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- The following scripts integrate with bootstrap and enable the dropdown menu in the navbar -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
