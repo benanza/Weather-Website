@@ -21,4 +21,6 @@ Contains:
 
 - Intuitive Navigation Bar
 
+Screenshot of homepage:
+
 ![GitHub Logo](https://github.com/benanza/Weather-Vacation-Plotting/blob/master/Site%20Screen%20Shot.png?raw=true)
